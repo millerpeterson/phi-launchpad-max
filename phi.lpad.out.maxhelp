@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 264.0, 68.0, 689.0, 630.0 ],
+		"rect" : [ 100.0, 91.0, 659.0, 640.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3389,7 +3389,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
+						"rect" : [ 100.0, 117.0, 659.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3410,6 +3410,35 @@
 						"tags" : "",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-11",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 184.0, 253.0, 150.0, 33.0 ],
+									"text" : "Default brightness (1/5) is in row 26."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 184.0, 223.0, 79.0, 20.0 ],
+									"text" : "loadmess 26"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -3684,7 +3713,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 277.0, 478.0, 124.0, 18.0 ],
-									"text" : "setDutyCycle 2 6"
+									"text" : "setDutyCycle 1 5"
 								}
 
 							}
@@ -3892,12 +3921,12 @@
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-4",
-									"linecount" : 4,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 86.0, 594.0, 60.0 ],
-									"text" : "To control the duty cycle, you send the launchpad a numerator (between 1 and 16) and a denominator (between 3 and 18), which determines the proportion of time for which the LEDs are on. 1 / 5 is the default. Note that all duty cycles that work out to one or more will be the same - maximum brightness. Also note that LEDs at full brightness (red = 3, green = 3) are not affected by this command.",
+									"patching_rect" : [ 16.0, 86.0, 594.0, 74.0 ],
+									"text" : "To control the duty cycle, you send the launchpad a numerator (between 1 and 16) and a denominator (between 3 and 18), which determines the proportion of time for which the LEDs are on (roughly, the brightness). 1 / 5 is the default. Note that all duty cycles that work out to one or more will be the same - maximum brightness. Also note that LEDs at full brightness (red = 3, green = 3) are not affected by this command.",
 									"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ]
 								}
 
@@ -4037,6 +4066,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 193.5, 243.0, 177.0, 243.0, 177.0, 219.0, 73.5, 219.0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -4082,7 +4121,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
+						"rect" : [ 0.0, 26.0, 659.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4102,8 +4141,410 @@
 						"digest" : "",
 						"tags" : "",
 						"showontab" : 1,
-						"boxes" : [  ],
-						"lines" : [  ]
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-26",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 47.5, 200.5, 37.0, 18.0 ],
+									"text" : "reset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 320.5, 66.0, 103.0, 20.0 ],
+									"text" : "phi.lpad.smartout"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-137",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 320.5, 11.5, 270.0, 47.0 ],
+									"text" : "phi.lpad.smartout is an easy way to use double-buffering and render efficiently to the launchpad. Check out its help file! "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 136.5, 418.0, 59.0, 20.0 ],
+									"text" : "s to_lpad"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-15",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 304.75, 309.0, 202.0, 98.0 ],
+									"text" : "2. Send the 'swapBuffers' message to the phi.lpad.out object. All of the changes that were made with the 'setGrid' messages and the 'update' flag become visible instantly."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 274.25, 154.0, 103.0, 25.0 ],
+									"text" : "Red Square"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 124.25, 154.0, 109.0, 25.0 ],
+									"text" : "Green Square"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-3",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 393.5, 166.5, 187.0, 98.0 ],
+									"text" : "1. When you append the 'update' flag to an LED message (i.e. setGrid, setTop, setRight, setLed), it writes to the hidden updating buffer."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-117",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 16.0, 95.0, 610.0, 36.0 ],
+									"text" : "The purpose of double-buffering is to eliminate flicker that can ccur when sending a large number of messages at the same time to the Launchpad.",
+									"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 48.0,
+									"frgb" : 0.0,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 16.0, 5.0, 286.0, 60.0 ],
+									"text" : "phi.lpad.out",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"varname" : "autohelp_top_title"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 16.0, 65.0, 310.5, 21.0 ],
+									"text" : "Double buffering.",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"varname" : "autohelp_top_digest"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-35",
+									"linecount" : 4,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 248.25, 186.5, 135.0, 58.0 ],
+									"text" : "setGrid 3 3 3 0 update, setGrid 4 3 3 0 update, setGrid 3 4 3 0 update, setGrid 4 4 3 0 update"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 248.25, 156.5, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 98.25, 154.0, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-10",
+									"linecount" : 4,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 98.25, 186.5, 142.0, 58.0 ],
+									"text" : "setGrid 2 3 0 3 update, setGrid 3 3 0 3 update, setGrid 2 4 0 3 update, setGrid 3 4 0 3 update"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-21",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 469.0, 610.0, 87.0 ],
+									"text" : "Note that you can't use double-buffering in conjunction with the 'autoFlashOn' message - when you use the Launchpad's built-in flashing with the 'autoFlashOn' message, the Launchpad is simply swapping the buffers at a fixed rate.\n\nYou can achieve your own flashing by having one LED set to different colors in the updating and displaying buffers, and then swapping buffers at the desired rate."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 216.75, 349.0, 76.0, 18.0 ],
+									"text" : "swapBuffers"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-20",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 506.5, 205.5, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "!",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-23",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 289.5, 25.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "!",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-19",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 491.5, 190.5, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "!",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-93",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 510.0, 193.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "!",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 916.355896, 372.763794, 106.0, 20.0 ],
@@ -4141,7 +4582,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
+						"rect" : [ 0.0, 26.0, 659.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4647,6 +5088,27 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "phi.lpad.smartout.maxpat",
+				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "phi.lpad.buffer.maxpat",
+				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "phi.patching.router.maxpat",
+				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "duty_cycles.txt",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
 				"patcherrelativepath" : "",
@@ -4662,13 +5124,6 @@
 			}
 , 			{
 				"name" : "phi.lpad.out.maxpat",
-				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "phi.patching.router.maxpat",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
