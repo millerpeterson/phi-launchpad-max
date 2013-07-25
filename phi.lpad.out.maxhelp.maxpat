@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 264.0, 68.0, 662.0, 630.0 ],
+		"rect" : [ 264.0, 68.0, 689.0, 630.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,47 @@
 		"tags" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 119.625, 421.899994, 33.0, 20.0 ],
+					"text" : "r init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 462.5, 183.0, 35.0, 20.0 ],
+					"text" : "s init"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 95.0, 512.5, 57.0, 20.0 ],
+					"text" : "zl slice 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Arial",
@@ -54,8 +95,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 499.0, 156.931824, 130.5, 87.0 ],
-					"text" : "The first thine your patch should do is select your MIDI device then send the phi.lpad.out the 'reset' message."
+					"patching_rect" : [ 507.5, 173.0, 130.5, 87.0 ],
+					"text" : "The first thing your patch should do is select your MIDI device then send the phi.lpad.out the 'reset' message."
 				}
 
 			}
@@ -69,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.0, 475.0, 244.0, 25.0 ],
+					"patching_rect" : [ 226.0, 471.0, 244.0, 25.0 ],
 					"text" : "Clear LEDs; reset to original state."
 				}
 
@@ -83,22 +124,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 245.0, 478.5, 37.0, 18.0 ],
+					"patching_rect" : [ 183.0, 474.5, 37.0, 18.0 ],
 					"text" : "reset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-130",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 303.5, 543.5, 68.0, 20.0 ],
-					"text" : "unpack s s"
 				}
 
 			}
@@ -111,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 474.5, 127.5, 155.0, 20.0 ],
+					"patching_rect" : [ 462.5, 143.5, 155.0, 20.0 ],
 					"text" : "loadmess bang Launchpad"
 				}
 
@@ -127,7 +154,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.75, 533.5, 128.75, 40.0 ],
+					"patching_rect" : [ 71.75, 554.5, 128.75, 40.0 ],
 					"text" : "Plug into midiout; select device!"
 				}
 
@@ -141,7 +168,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.5, 412.899994, 57.0, 20.0 ],
+					"patching_rect" : [ 50.0, 421.899994, 57.0, 20.0 ],
 					"text" : "r to_lpad"
 				}
 
@@ -170,7 +197,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 543.5, 49.0, 20.0 ],
+					"patching_rect" : [ 16.0, 564.5, 49.0, 20.0 ],
 					"text" : "midiout"
 				}
 
@@ -3353,8 +3380,7 @@
 					"id" : "obj-79",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -3363,7 +3389,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
+						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3383,19 +3409,63 @@
 						"digest" : "",
 						"tags" : "",
 						"showontab" : 1,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 411.0, 478.0, 59.0, 20.0 ],
+									"text" : "s to_lpad"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
 									"frgb" : 0.0,
-									"id" : "obj-40",
-									"linecount" : 5,
+									"id" : "obj-7",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 300.0, 375.0, 116.0, 74.0 ],
-									"text" : "Click below to draw some lines of varying brightness with which to experiment."
+									"patching_rect" : [ 457.0, 279.0, 187.0, 54.0 ],
+									"text" : "Click to draw some lines of varying brightness with which to experiment."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-140",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 381.0, 167.0, 223.0, 69.0 ],
+									"text" : "The coll below contains all 255 possible duty cycles, sorted in ascending order. Move the slider to try out different duty cycles."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-3",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 16.0, 527.0, 594.0, 60.0 ],
+									"text" : "\"Launchpad controls the brightness of its LEDs by continually switching them on and off faster than the eye can see: a technique known as multiplexing. This command provides a way of altering the proportion of time for which the LEDs are on while they are in low- and medium- brightness modes. This proportion is known as the duty cycle.\" (Launchpad Programmer's Manual)"
 								}
 
 							}
@@ -3406,7 +3476,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 300.0, 465.0, 37.0, 37.0 ]
+									"patching_rect" : [ 411.0, 287.5, 37.0, 37.0 ]
 								}
 
 							}
@@ -3586,7 +3656,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 300.0, 510.0, 75.0, 20.0 ],
+									"patching_rect" : [ 411.0, 362.5, 75.0, 20.0 ],
 									"saved_object_attributes" : 									{
 										"default_fontface" : 0,
 										"default_fontname" : "Arial",
@@ -3613,7 +3683,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.0, 600.0, 124.0, 18.0 ],
+									"patching_rect" : [ 277.0, 478.0, 124.0, 18.0 ],
 									"text" : "setDutyCycle 2 6"
 								}
 
@@ -3627,7 +3697,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 345.0, 270.0, 39.0, 20.0 ],
+									"patching_rect" : [ 334.0, 191.5, 39.0, 20.0 ],
 									"text" : "bright"
 								}
 
@@ -3641,7 +3711,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 270.0, 39.0, 20.0 ],
+									"patching_rect" : [ 19.0, 191.5, 39.0, 20.0 ],
 									"text" : "dim"
 								}
 
@@ -3655,7 +3725,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 495.0, 41.0, 18.0 ],
+									"patching_rect" : [ 64.0, 403.0, 41.0, 18.0 ],
 									"text" : "$1 $2"
 								}
 
@@ -3669,19 +3739,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 525.0, 129.0, 20.0 ],
+									"patching_rect" : [ 64.0, 433.0, 129.0, 20.0 ],
 									"text" : "prepend setDutyCycle"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-27",
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 600.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -3691,12 +3750,11 @@
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-26",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 150.0, 465.0, 107.0, 33.0 ],
-									"text" : "Proportion of time in 'on' state."
+									"patching_rect" : [ 303.0, 364.0, 107.0, 20.0 ],
+									"text" : "Brightness"
 								}
 
 							}
@@ -3709,7 +3767,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 135.0, 435.0, 150.0, 20.0 ],
+									"patching_rect" : [ 214.0, 364.0, 150.0, 20.0 ],
 									"text" : "Denominator"
 								}
 
@@ -3723,7 +3781,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 405.0, 150.0, 20.0 ],
+									"patching_rect" : [ 125.0, 363.5, 150.0, 20.0 ],
 									"text" : "Numerator"
 								}
 
@@ -3738,7 +3796,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 60.0, 405.0, 50.0, 20.0 ]
+									"patching_rect" : [ 125.0, 338.0, 50.0, 20.0 ]
 								}
 
 							}
@@ -3752,7 +3810,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 75.0, 435.0, 50.0, 20.0 ]
+									"patching_rect" : [ 214.0, 338.0, 50.0, 20.0 ]
 								}
 
 							}
@@ -3766,7 +3824,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 90.0, 465.0, 50.0, 20.0 ]
+									"patching_rect" : [ 303.0, 338.0, 50.0, 20.0 ]
 								}
 
 							}
@@ -3779,7 +3837,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 30.0, 345.0, 48.5, 20.0 ],
+									"patching_rect" : [ 64.0, 253.0, 48.5, 20.0 ],
 									"text" : "t l l"
 								}
 
@@ -3793,23 +3851,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "int", "float" ],
-									"patching_rect" : [ 60.0, 375.0, 94.0, 20.0 ],
+									"patching_rect" : [ 125.0, 296.0, 197.0, 20.0 ],
 									"text" : "unpack 0 0 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-12",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 150.0, 300.0, 243.0, 47.0 ],
-									"text" : "This coll contains all 255 possible duty cycles, sorted in ascending order. Move the slider above to try out different duty cycles."
 								}
 
 							}
@@ -3821,7 +3864,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 75.0, 270.0, 258.0, 21.0 ]
+									"patching_rect" : [ 64.0, 191.5, 258.0, 21.0 ]
 								}
 
 							}
@@ -3834,7 +3877,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 30.0, 315.0, 111.0, 20.0 ],
+									"patching_rect" : [ 64.0, 223.0, 111.0, 20.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -3849,12 +3892,12 @@
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-4",
-									"linecount" : 11,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 102.0, 594.0, 155.0 ],
-									"text" : "The Launchpad Programmer's manual says it best:\n\n\"Launchpad controls the brightness of its LEDs by continually switching them on and off faster than the eye can see: a technique known as multiplexing. This command provides a way of altering the proportion of time for which the LEDs are on while they are in low- and medium- brightness modes. This proportion is known as the duty cycle.\"\n\nTo control the duty cycle, you send the launchpad a numerator (between 1 and 16) and a denominator (between 3 and 18), which determines the proportion of time for which the LEDs are on. 1 / 5 is the default. Note that all duty cycles that work out to one or more will be the same - maximum brightness. Also note that LEDs at full brightness (red = 3, green = 3) are not affected by this command.",
+									"patching_rect" : [ 16.0, 86.0, 594.0, 60.0 ],
+									"text" : "To control the duty cycle, you send the launchpad a numerator (between 1 and 16) and a denominator (between 3 and 18), which determines the proportion of time for which the LEDs are on. 1 / 5 is the default. Note that all duty cycles that work out to one or more will be the same - maximum brightness. Also note that LEDs at full brightness (red = 3, green = 3) are not affected by this command.",
 									"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ]
 								}
 
@@ -3868,8 +3911,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 73.0, 163.0, 21.0 ],
-									"text" : "Manipulating brightness:"
+									"patching_rect" : [ 16.0, 65.0, 163.0, 21.0 ],
+									"text" : "Manipulate brightness.",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
 
 							}
@@ -3882,7 +3926,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 13.0, 286.0, 60.0 ],
+									"patching_rect" : [ 16.0, 5.0, 286.0, 60.0 ],
 									"text" : "phi.lpad.out",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"varname" : "autohelp_top_title"
@@ -3946,9 +3990,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 73.5, 461.0, 420.5, 461.0 ],
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -3958,7 +4003,7 @@
 									"destination" : [ "obj-36", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 39.5, 565.0, 174.5, 565.0 ],
+									"midpoints" : [ 73.5, 473.0, 391.5, 473.0 ],
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -3974,10 +4019,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 309.5, 565.0, 39.5, 565.0 ],
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -4038,7 +4082,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
+						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4097,7 +4141,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
+						"rect" : [ 0.0, 26.0, 689.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4157,7 +4201,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 445.5, 127.5, 20.0, 20.0 ],
+					"patching_rect" : [ 433.5, 143.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "!",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
@@ -4296,30 +4340,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-130", 0 ],
+					"destination" : [ "obj-45", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 484.0, 265.0, 628.0, 265.0, 628.0, 525.0, 313.0, 525.0 ],
 					"source" : [ "obj-129", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-133", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-130", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 362.0, 576.0, 3.0, 576.0, 3.0, 540.0, 25.5, 540.0 ],
-					"source" : [ "obj-130", 1 ]
 				}
 
 			}
@@ -4554,6 +4578,33 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-133", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-44", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
