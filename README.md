@@ -23,8 +23,8 @@ Place the "PHI Launchpad" folder into your Max packages directory.
 
 ### Usage
 There are three main objects to use:
-phi.lpad.in - Get button presses from the Launchpad.
-phi.lpad.out - Set Launchpad LEDs and control how they are displayed.
-phi.lpad.smartout - Efficiently render smooth animation to the Launchpad.
+- phi.lpad.in - Get button presses from the Launchpad.
+- phi.lpad.out - Set Launchpad LEDs and control how they are displayed.
+- phi.lpad.smartout - Efficiently render smooth animation to the Launchpad.
 
 Check out the Max help files for these objects for more details.
