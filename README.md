@@ -3,7 +3,8 @@ PHI Launchpad Abstractions
 version 1.1 - by Miller Peterson
 --------------------------------
 
-https://github.com/millerpeterson/phi-launchpad-max
+Download: http://cycling74.com/toolbox/launchpad-abstractions
+Code: http://github.com/millerpeterson/phi-launchpad-max
 
 Max abstractions for working with the Novation Launchpad. Basically these
 wrap the functions described in the Launchpad Programmer’s Reference in
