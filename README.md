@@ -20,7 +20,7 @@ overall brightness, and get input from the Launchpad.
 - Now distributed as a package
 
 ### Installation
-Place the "PHI Launchpad" folder into your Max packages directory.
+Place this folder into your Max packages directory.
 
 ### Usage
 There are three main objects to use:
@@ -28,4 +28,10 @@ There are three main objects to use:
 - phi.lpad.out - Set Launchpad LEDs and control how they are displayed.
 - phi.lpad.smartout - Efficiently render smooth animation to the Launchpad.
 
+### Help
 Check out the Max help files for these objects for more details.
+
+### Examples
+Check out phi.lpad.movieplayer in the examples folder. This patch renders
+movies onto the Launchpad, demonstrating how you can map Jitter matrices to
+the Launchpad.
