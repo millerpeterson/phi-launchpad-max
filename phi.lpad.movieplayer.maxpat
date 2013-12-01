@@ -3,13 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 5,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 854.0, 750.0 ],
+		"rect" : [ 433.0, 67.0, 505.0, 281.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -27,6 +28,34 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 616.0, 60.000004, 79.0, 20.0 ],
+					"text" : "loadmess 25"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 608.999939, 487.0, 72.0, 20.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -135,8 +164,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 5,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 221.0, 101.0, 498.0, 652.0 ],
@@ -923,8 +953,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 5,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 598.0, 107.0, 361.0, 668.0 ],
@@ -1207,7 +1238,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.0, 225.0, 99.0, 125.0 ],
-									"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 1 2 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0"
+									"text" : "0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 2 1 0 0 2 0 0 0 1 2 2 0 0 2 0 0 0 1 2 2 0 0 2 1 0 0 1 2 2 0 0 2 1 0 0 1 1 2 0 0 2 1 0"
 								}
 
 							}
@@ -1222,7 +1253,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 135.0, 225.0, 99.0, 125.0 ],
-									"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 2 1 0 0 0 0 0 1 2 2 2 2 0 0 0 0 0 1 1 2 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 1 2 1 0 0 0"
+									"text" : "0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 1 1 1 0 0 1 0 0 0 0 1 1 0 0 1 1 0 0 1 1 1 0 0 1 1 0 0 1 1 1 0 0 1 1 0"
 								}
 
 							}
@@ -2071,6 +2102,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2093,6 +2133,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -2137,35 +2186,35 @@
 		"dependency_cache" : [ 			{
 				"name" : "phi.lpad.out.maxpat",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "phi.patching.router.maxpat",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "phi.lpad.smartout.maxpat",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "phi.lpad.buffer.maxpat",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "duty_cycles.txt",
 				"bootpath" : "/Users/miller/Documents/Development/Launchpad",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
