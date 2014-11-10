@@ -6,6 +6,7 @@ version 1.1 - by Miller Peterson
 ![Max launchpad help file](/launchpad_help.png)
 
 Download: http://cycling74.com/toolbox/launchpad-abstractions
+
 Code: http://github.com/millerpeterson/phi-launchpad-max
 
 Max abstractions for working with the Novation Launchpad. Basically these
