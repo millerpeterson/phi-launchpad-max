@@ -22,7 +22,11 @@ overall brightness, and get input from the Launchpad.
 - Now distributed as a package
 
 ### Installation
-Place this folder into your Max packages directory.
+
+Download official package from:
+http://cycling74.com/toolbox/launchpad-abstractions
+
+Or put the files from this directory on your max search path.
 
 ### Usage
 There are three main objects to use:
